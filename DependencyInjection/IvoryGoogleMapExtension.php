@@ -146,8 +146,8 @@ class IvoryGoogleMapExtension extends ConfigurableExtension
 
             $definition
                 ->addArgument(new Reference($config['client']))
-                ->addArgument(new Reference($config['message_factory']))
-                ->addArgument(new Reference('ivory.serializer'));
+                ->addArgument(new Reference($config['message_factory']));
+                //->addArgument(new Reference('ivory.serializer'));
         }
 
         if ($http && isset($config['format'])) {
